@@ -36,7 +36,7 @@ breads.get('/:arrayIndex', (req, res) => {
 })
 
 // UPDATE
-breads.put('/:arrayIndex', (req, res) => {
+breads.put('/:arrayIndex', express.urlencoded({ extended: true }), (req, res) => {
   if(req.body.hasGluten === 'on'){
     req.body.hasGluten = true
   } else {
