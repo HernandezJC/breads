@@ -5,7 +5,6 @@ function Show ({baker}) {
     return (
       <Default>
           <h3>Breads {baker.name} has baked</h3>
-          <h3>Breads {baker.name} has baked</h3>
           <ul>
     {
         baker.breads.map((bread)=> {
